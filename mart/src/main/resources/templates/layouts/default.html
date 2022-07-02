@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+
+	<!-- JQUERY -->
+	<script th:src="@{/js/vendor/jquery-1.11.2.min.js}"></script>
+	<script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+	<script th:src="@{/js/isotope.pkgd.min.js}"></script>
+	<script th:src="@{/js/owl.carousel.min.js}"></script>
+	<script th:src="@{/js/wow.min.js}"></script>
+	<script th:src="@{/js/custom.js}"></script>
+
+</head>
+
+<body>
+	<div th:replace="fragments/header::header"></div>
+	
+	<div th:replace="fragments/navigator::navigator"></div>
+
+	<div layout:fragment="content" class="content">
+
+	</div>
+
+	<div th:replace="fragments/footer::footer"></div>
+</body>
+
+</html>
